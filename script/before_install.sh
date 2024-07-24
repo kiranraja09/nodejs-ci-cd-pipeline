@@ -1,15 +1,15 @@
 #!/bin/bash
-apt-get update -y
+yum update -y
 
 curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh | bash -
 
 bash nodesource_setup.sh
 
-apt-get install nodejs -y
+yum install nodejs -y
 
-apt-get install build-essential -y
+yum install build-essential -y
 
-apt install ncdu
+yum install ncdu
 
 node -v | grep v8
 
